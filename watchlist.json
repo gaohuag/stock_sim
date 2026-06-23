@@ -1,0 +1,111 @@
+{
+  "stocks": [
+    {
+      "code": "159558",
+      "name": "半导体设备ETF易方达",
+      "position_size_pct": 20,
+      "buy_triggers": [
+        3.3,
+        3.1,
+        2.9
+      ],
+      "sell_triggers": [
+        4.0,
+        4.5
+      ],
+      "stop_loss": 2.85,
+      "notes": "AI算力+国产替代最强主线，分3批建仓，止损收紧至2.85"
+    },
+    {
+      "code": "560390",
+      "name": "电网设备ETF易方达",
+      "position_size_pct": 25,
+      "buy_triggers": [
+        1.1,
+        1.05,
+        1.0
+      ],
+      "sell_triggers": [
+        1.3,
+        1.4
+      ],
+      "stop_loss": 0.95,
+      "notes": "电网投资上行周期，最强主线，已建仓第一批，继续分批"
+    },
+    {
+      "code": "515050",
+      "name": "通信ETF华夏",
+      "position_size_pct": 15,
+      "buy_triggers": [
+        1.25,
+        1.18,
+        1.1
+      ],
+      "sell_triggers": [
+        1.6,
+        1.75
+      ],
+      "stop_loss": 1.05,
+      "notes": "光模块业绩强，等回踩1.25附近买入，近1年涨幅大注意风险"
+    },
+    {
+      "code": "513130",
+      "name": "恒生科技ETF华泰柏瑞",
+      "position_size_pct": 0,
+      "buy_triggers": [],
+      "sell_triggers": [
+        0.62,
+        0.65
+      ],
+      "stop_loss": 0.5,
+      "notes": "不减仓，等反弹至成本0.63附近减仓50%，止损0.50"
+    },
+    {
+      "code": "605117",
+      "name": "德业股份",
+      "position_size_pct": 15,
+      "buy_triggers": [
+        95.0,
+        88.0
+      ],
+      "sell_triggers": [
+        125.0,
+        140.0
+      ],
+      "stop_loss": 82.0,
+      "notes": "储能+光伏逆变器龙头，等95元附近买入，业绩高增长"
+    },
+    {
+      "code": "159915",
+      "name": "创业板ETF易方达",
+      "position_size_pct": 10,
+      "buy_triggers": [
+        3.8,
+        3.6
+      ],
+      "sell_triggers": [
+        4.2,
+        4.5
+      ],
+      "stop_loss": 3.2,
+      "notes": "创业板整体行情Beta工具，回踩3.80附近分批买入"
+    },
+    {
+      "code": "518880",
+      "name": "黄金ETF华夏",
+      "position_size_pct": 5,
+      "buy_triggers": [
+        8.5,
+        8.0
+      ],
+      "sell_triggers": [
+        13.5,
+        14.5
+      ],
+      "stop_loss": 8.0,
+      "notes": "避险对冲，等回踩8.50附近买入，现价8.60偏高"
+    }
+  ],
+  "last_update": "2026-06-24",
+  "notes": "股票池已优化：聚焦熟悉赛道（半导体/电网/通信/储能），新增创业板ETF做Beta、黄金ETF做对冲，删掉研究不透的标的"
+}

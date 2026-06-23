@@ -1,0 +1,53 @@
+{
+  "cash": 70072.6216,
+  "positions": [
+    {
+      "code": "159558",
+      "name": "半导体设备ETF易方达",
+      "quantity": 6000,
+      "cost_price": 2.9258,
+      "buy_date": "2026-06-01"
+    },
+    {
+      "code": "513130",
+      "name": "恒生科技ETF华泰柏瑞",
+      "quantity": 7000,
+      "cost_price": 0.6346,
+      "buy_date": "2026-06-01"
+    },
+    {
+      "code": "560390",
+      "name": "电网设备ETF易方达",
+      "quantity": 13300,
+      "cost_price": 1.1214,
+      "buy_date": "2026-06-24"
+    }
+  ],
+  "trade_log": [
+    {
+      "time": "2026-06-24 06:03:56",
+      "action": "BUY",
+      "code": "560390",
+      "name": "电网设备ETF易方达",
+      "price": 1.1214,
+      "quantity": 13300,
+      "amount": 14914.62,
+      "reason": "AI决策：560390现价1.1214，虽已超触发价1.12，但为最强主线，追涨买入第一批"
+    }
+  ],
+  "total_assets": 110932.84,
+  "start_date": "2026-06-24",
+  "last_update": "2026-06-24 06:11:55",
+  "_initial_positions": [
+    {
+      "code": "159558",
+      "quantity": 6000,
+      "cost_price": 2.9258
+    },
+    {
+      "code": "513130",
+      "quantity": 7000,
+      "cost_price": 0.6346
+    }
+  ]
+}
