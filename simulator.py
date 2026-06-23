@@ -10,11 +10,11 @@ import sys
 import time
 from datetime import datetime, timedelta
 
-SIM_DIR = "/workspace/stock_sim"
-PORTFOLIO_FILE = f"{SIM_DIR}/portfolio.json"
-WATCHLIST_FILE = f"{SIM_DIR}/watchlist.json"
-TRADE_LOG_FILE = f"{SIM_DIR}/trades.log"
-REPORT_FILE = f"{SIM_DIR}/report.html"
+SIM_DIR = os.path.dirname(os.path.abspath(__file__))
+PORTFOLIO_FILE = os.path.join(SIM_DIR, "portfolio.json")
+WATCHLIST_FILE = os.path.join(SIM_DIR, "watchlist.json")
+TRADE_LOG_FILE = os.path.join(SIM_DIR, "trades.log")
+REPORT_FILE = os.path.join(SIM_DIR, "report.html")
 
 # ============================================================
 # 工具函数
@@ -600,7 +600,7 @@ def main():
     # 发送邮件报告
     try:
         import sys
-        sys.path.insert(0, '/workspace/stock_sim')
+        sys.path.insert(0, SIM_DIR)
         import email_notify
         ok, msg = email_notify.send_report(portfolio, watchlist, prices, len(all_trades))
         if ok:
