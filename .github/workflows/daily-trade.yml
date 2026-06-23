@@ -7,6 +7,9 @@ on:
     - cron: '5 7 * * 1-5'
   workflow_dispatch:  # 允许手动触发
 
+permissions:
+  contents: write  # 允许 Actions 推送 commit
+
 jobs:
   run-simulator:
     runs-on: ubuntu-latest
@@ -26,14 +29,13 @@ jobs:
         env:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
         run: |
-          cd stock_sim
           python3.11 simulator.py
 
       - name: 提交更新后的持仓文件
         run: |
           git config user.email "trader@ai.com"
           git config user.name "AI Trader"
-          git add stock_sim/portfolio.json stock_sim/trades.log stock_sim/report.html
+          git add portfolio.json trades.log report.html
           git diff --cached --quiet || git commit -m "chore: 更新持仓 $(date +'%Y-%m-%d')"
           git push
         env:

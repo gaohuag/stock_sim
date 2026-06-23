@@ -7,11 +7,12 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email import encoders
 import datetime
+import os
 
 SMTP_SERVER = "smtp.126.com"
 SMTP_PORT = 25
 SMTP_USER = "gaohuag@126.com"
-SMTP_PASS = "PMNB4rctZCHezdDw"
+SMTP_PASS = os.environ.get("SMTP_PASS", "PMNB4rctZCHezdDw")
 RECIPIENT = "gaohuag@126.com"
 
 
