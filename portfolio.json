@@ -1,5 +1,5 @@
 {
-  "cash": 70072.6216,
+  "cash": 64989.637162,
   "positions": [
     {
       "code": "159558",
@@ -21,6 +21,13 @@
       "quantity": 13300,
       "cost_price": 1.1214,
       "buy_date": "2026-06-24"
+    },
+    {
+      "code": "518880",
+      "name": "黄金ETF华夏",
+      "quantity": 600,
+      "cost_price": 8.4691,
+      "buy_date": "2026-06-24"
     }
   ],
   "trade_log": [
@@ -35,9 +42,9 @@
       "reason": "AI决策：560390现价1.1214，虽已超触发价1.12，但为最强主线，追涨买入第一批"
     }
   ],
-  "total_assets": 110932.84,
+  "total_assets": 111876.71,
   "start_date": "2026-06-24",
-  "last_update": "2026-06-23 23:25:29",
+  "last_update": "2026-06-24 05:12:39",
   "_initial_positions": [
     {
       "code": "159558",
