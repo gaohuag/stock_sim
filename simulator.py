@@ -191,51 +191,46 @@ def check_buy_signals(portfolio, watchlist, prices):
         if not triggered:
             continue
 
-        if True:  # 占位保持缩进
+        total = portfolio.get("total_assets", 110000)
+        target_pct = stock.get("position_size_pct", 10)
+        target_amount = total * target_pct / 100.0
+
+        if has_position:
+            current_value = current_qty * price
+            if current_value >= target_amount * 0.8:
+                continue
+            buy_amount = min(target_amount - current_value, cash)
+        else:
+            buy_amount = min(target_amount, cash)
+
+        if buy_amount < 1000:
             continue
 
-        if True:  # 保持后续缩进
-                total = portfolio.get("total_assets", 110000)
-                target_pct = stock.get("position_size_pct", 10)
-                target_amount = total * target_pct / 100.0
+        qty = int(buy_amount / price / 100) * 100
+        if qty <= 0:
+            continue
 
-                if has_position:
-                    current_value = current_qty * price
-                    if current_value >= target_amount * 0.8:
-                        continue
-                    buy_amount = min(target_amount - current_value, cash)
-                else:
-                    buy_amount = min(target_amount, cash)
+        actual_amount = qty * price
+        fee = actual_amount * 0.0003
+        total_cost = actual_amount + fee
 
-                if buy_amount < 1000:
-                    continue
+        if total_cost > cash:
+            qty = int(cash / (price * 1.0003) / 100) * 100
+            if qty <= 0:
+                continue
+            actual_amount = qty * price
+            total_cost = actual_amount * 1.0003
 
-                qty = int(buy_amount / price / 100) * 100
-                if qty <= 0:
-                    continue
-
-                actual_amount = qty * price
-                fee = actual_amount * 0.0003
-                total_cost = actual_amount + fee
-
-                if total_cost > cash:
-                    qty = int(cash / (price * 1.0003) / 100) * 100
-                    if qty <= 0:
-                        continue
-                    actual_amount = qty * price
-                    total_cost = actual_amount * 1.0003
-
-                trades.append({
-                    "code": code,
-                    "name": name,
-                    "action": "BUY",
-                    "price": price,
-                    "quantity": qty,
-                    "amount": round(actual_amount, 2),
-                    "trigger": triggered_trigger,
-                    "reason": f"{reason_prefix}：价格{price:.4f}（触发价{triggered_trigger}）"
-                })
-                break
+        trades.append({
+            "code": code,
+            "name": name,
+            "action": "BUY",
+            "price": price,
+            "quantity": qty,
+            "amount": round(actual_amount, 2),
+            "trigger": triggered_trigger,
+            "reason": f"{triggered_reason}：价格{price:.4f}（触发价{triggered_trigger}）"
+        })
 
     return trades
 
@@ -672,6 +667,7 @@ def send_email_report(portfolio, prices, trade_count):
     lines.append("")
     lines.append("⚠️ 本系统为模拟交易，所有收益均为虚拟，不构成任何投资建议。")
     lines.append("=" * 50)
+    body = "\n".join(lines)
     try:
         msg = MIMEMultipart("alternative")
         msg["From"] = smtp_user
