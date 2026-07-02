@@ -1,5 +1,5 @@
 {
-  "cash": 66709.308624,
+  "cash": 49853.753474,
   "positions": [
     {
       "code": "513130",
@@ -28,6 +28,13 @@
       "quantity": 100,
       "cost_price": 97.5,
       "buy_date": "2026-06-26"
+    },
+    {
+      "code": "515050",
+      "name": "通信ETF华夏",
+      "quantity": 13400,
+      "cost_price": 1.2575,
+      "buy_date": "2026-07-02"
     }
   ],
   "trade_log": [
@@ -42,9 +49,9 @@
       "reason": "AI决策：560390现价1.1214，虽已超触发价1.12，但为最强主线，追涨买入第一批"
     }
   ],
-  "total_assets": 113068.05,
+  "total_assets": 112213.59,
   "start_date": "2026-06-24",
-  "last_update": "2026-07-01 10:46:15",
+  "last_update": "2026-07-02 05:11:10",
   "_initial_positions": [
     {
       "code": "159558",
