@@ -1,5 +1,5 @@
 {
-  "cash": 49853.753474,
+  "cash": 40985.253721999994,
   "positions": [
     {
       "code": "513130",
@@ -35,6 +35,13 @@
       "quantity": 13400,
       "cost_price": 1.2575,
       "buy_date": "2026-07-02"
+    },
+    {
+      "code": "562800",
+      "name": "稀有金属ETF嘉实",
+      "quantity": 8200,
+      "cost_price": 1.0812,
+      "buy_date": "2026-07-06"
     }
   ],
   "trade_log": [
@@ -49,9 +56,9 @@
       "reason": "AI决策：560390现价1.1214，虽已超触发价1.12，但为最强主线，追涨买入第一批"
     }
   ],
-  "total_assets": 110898.95,
+  "total_assets": 110687.61,
   "start_date": "2026-06-24",
-  "last_update": "2026-07-06 05:42:27",
+  "last_update": "2026-07-06 11:42:23",
   "_initial_positions": [
     {
       "code": "159558",
