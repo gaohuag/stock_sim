@@ -1,5 +1,5 @@
 {
-  "cash": 51589.51303999999,
+  "cash": 5221.276740999991,
   "positions": [
     {
       "code": "513130",
@@ -42,6 +42,20 @@
       "quantity": 2800,
       "cost_price": 3.8909,
       "buy_date": "2026-07-07"
+    },
+    {
+      "code": "159558",
+      "name": "半导体设备ETF易方达",
+      "quantity": 17600,
+      "cost_price": 1.1699,
+      "buy_date": "2026-07-16"
+    },
+    {
+      "code": "560390",
+      "name": "电网设备ETF易方达",
+      "quantity": 30300,
+      "cost_price": 0.8503,
+      "buy_date": "2026-07-16"
     }
   ],
   "trade_log": [
@@ -56,9 +70,9 @@
       "reason": "AI决策：560390现价1.1214，虽已超触发价1.12，但为最强主线，追涨买入第一批"
     }
   ],
-  "total_assets": 103218.93,
+  "total_assets": 102547.51,
   "start_date": "2026-06-24",
-  "last_update": "2026-07-16 04:29:09",
+  "last_update": "2026-07-16 09:21:43",
   "_initial_positions": [
     {
       "code": "159558",
