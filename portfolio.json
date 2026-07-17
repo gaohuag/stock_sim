@@ -1,5 +1,5 @@
 {
-  "cash": 5221.276740999991,
+  "cash": 65862.18094899999,
   "positions": [
     {
       "code": "513130",
@@ -16,13 +16,6 @@
       "buy_date": "2026-06-24"
     },
     {
-      "code": "605117",
-      "name": "德业股份",
-      "quantity": 100,
-      "cost_price": 97.5,
-      "buy_date": "2026-06-26"
-    },
-    {
       "code": "515050",
       "name": "通信ETF华夏",
       "quantity": 13400,
@@ -30,32 +23,11 @@
       "buy_date": "2026-07-02"
     },
     {
-      "code": "562800",
-      "name": "稀有金属ETF嘉实",
-      "quantity": 8200,
-      "cost_price": 1.0812,
-      "buy_date": "2026-07-06"
-    },
-    {
       "code": "159915",
       "name": "创业板ETF易方达",
       "quantity": 2800,
       "cost_price": 3.8909,
       "buy_date": "2026-07-07"
-    },
-    {
-      "code": "159558",
-      "name": "半导体设备ETF易方达",
-      "quantity": 17600,
-      "cost_price": 1.1699,
-      "buy_date": "2026-07-16"
-    },
-    {
-      "code": "560390",
-      "name": "电网设备ETF易方达",
-      "quantity": 30300,
-      "cost_price": 0.8503,
-      "buy_date": "2026-07-16"
     }
   ],
   "trade_log": [
@@ -70,9 +42,9 @@
       "reason": "AI决策：560390现价1.1214，虽已超触发价1.12，但为最强主线，追涨买入第一批"
     }
   ],
-  "total_assets": 102547.51,
+  "total_assets": 99265.5,
   "start_date": "2026-06-24",
-  "last_update": "2026-07-16 09:21:43",
+  "last_update": "2026-07-17 04:30:58",
   "_initial_positions": [
     {
       "code": "159558",
