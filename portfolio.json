@@ -1,5 +1,5 @@
 {
-  "cash": 70888.79095699999,
+  "cash": 78446.952557,
   "positions": [
     {
       "code": "513130",
@@ -21,13 +21,6 @@
       "quantity": 2800,
       "cost_price": 3.8909,
       "buy_date": "2026-07-07"
-    },
-    {
-      "code": "605117",
-      "name": "德业股份",
-      "quantity": 100,
-      "cost_price": 76.96,
-      "buy_date": "2026-10-08"
     }
   ],
   "trade_log": [
@@ -42,9 +35,9 @@
       "reason": "AI决策：560390现价1.1214，虽已超触发价1.12，但为最强主线，追涨买入第一批"
     }
   ],
-  "total_assets": 99002.97,
+  "total_assets": 98865.13,
   "start_date": "2026-06-24",
-  "last_update": "2026-10-08 14:31:10",
+  "last_update": "2026-10-09 07:31:11",
   "_initial_positions": [
     {
       "code": "159558",
